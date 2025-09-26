@@ -1,33 +1,54 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Adoption - Ubuntu Animal Rescue</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adopt - Ubuntu Animal Rescue</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Adopt an Animal</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="adoption.html">Adoption</a>
-            <a href="donation.html">Donate</a>
-            <a href="events.html">Events</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-    <main>
-        <section class="adoption-grid">
-            <div class="animal-card"><img src="images/dog1.jpg" alt="Dog"><p>Dog - Max</p></div>
-            <div class="animal-card"><img src="images/cat1.jpg" alt="Cat"><p>Cat - Bella</p></div>
-            <div class="animal-card"><img src="images/dog2.jpg" alt="Dog"><p>Dog - Rocky</p></div>
-            <div class="animal-card"><img src="images/cat2.jpg" alt="Cat"><p>Cat - Luna</p></div>
-        </section>
-    </main>
-    <footer>
-        <p>© 2025 Ubuntu Animal Rescue</p>
-    </footer>
+  <header class="site-header">
+    <nav>
+      <a href="index.html" class="logo">Ubuntu Animal Rescue</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="adopt.html" class="active">Adopt</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-header">
+    <h1>Adopt a Friend</h1>
+    <p>Find your new best friend and give them a forever home.</p>
+  </section>
+
+  <section class="adopt-list">
+    <div class="row">
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?puppy" alt="Adopt Dog">
+        <h3>Max</h3>
+        <p>Playful 2-year-old Labrador, great with kids.</p>
+        <a href="contact.html" class="btn">Adopt</a>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?kitten" alt="Adopt Cat">
+        <h3>Luna</h3>
+        <p>Gentle 1-year-old tabby, loves cuddles.</p>
+        <a href="contact.html" class="btn">Adopt</a>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?dog" alt="Adopt Pet">
+        <h3>Bella</h3>
+        <p>Energetic 3-year-old mixed breed, loves walks.</p>
+        <a href="contact.html" class="btn">Adopt</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ubuntu Animal Rescue | Made with ❤️ by Nixo</p>
+  </footer>
 </body>
 </html>

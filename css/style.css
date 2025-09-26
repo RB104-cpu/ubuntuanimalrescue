@@ -1,173 +1,186 @@
-/* Reset + Base */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Fonts & Base */
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: Arial, sans-serif;
   line-height: 1.6;
-  color: #333;
-  background: #f5f5dc; /* cream background */
-}
-a {
-  text-decoration: none;
-  color: inherit;
+  background-color: #f5f0e6;
+  color: #2d4739;
 }
 
-/* Navbar */
-.navbar {
+/* Header */
+.site-header {
+  background: #2d4739;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+.site-header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 8%;
-  background: #8b5e3c; /* brown */
-  color: white;
 }
-.logo img {
-  height: 50px;
+.site-header .logo {
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 20px;
 }
-.nav-links li a {
-  color: white;
-  font-weight: 500;
+.nav-links li {
+  margin-left: 1.5rem;
 }
-.menu-toggle {
-  display: none;
-  font-size: 24px;
-  cursor: pointer;
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.nav-links a:hover,
+.nav-links a.active {
+  color: #d99152;
 }
 
 /* Hero */
 .hero {
-  height: 70vh;
-  background: url("images/hero-bg.jpg") no-repeat center center/cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: url("https://source.unsplash.com/1200x500/?animals,forest")
+    no-repeat center center/cover;
+  color: #fff;
   text-align: center;
-  color: white;
-  padding: 0 20px;
+  padding: 6rem 2rem;
 }
 .hero h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
+  font-size: 2.5rem;
 }
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-.btn-primary {
-  background: #6aa84f; /* green */
-  color: white;
-  padding: 10px 25px;
-  border-radius: 25px;
+.hero .btn {
+  margin-top: 1rem;
+  background: #d99152;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  text-decoration: none;
   font-weight: bold;
-  transition: 0.3s;
+  border-radius: 5px;
+  transition: background 0.3s;
 }
-.btn-primary:hover {
-  background: #5b9143; /* darker green */
+.hero .btn:hover {
+  background: #8b5e3c;
 }
 
-/* Animals */
-.animals {
+/* Sections */
+section {
+  padding: 3rem 2rem;
   text-align: center;
-  padding: 60px 8%;
 }
-.animals h2 {
-  color: #8b5e3c; /* brown heading */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
 }
-.animal-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-  margin-top: 30px;
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
 }
-.animal-card {
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-.animal-card img {
+.card img {
   width: 100%;
-  border-radius: 12px;
+  display: block;
 }
-.animal-card h3 {
-  margin-top: 15px;
-  font-size: 1.2rem;
-  color: #6aa84f; /* green name */
+.card h3 {
+  margin: 1rem 0 0.5rem;
+}
+.card p {
+  padding: 0 1rem 1rem;
+}
+.card .btn {
+  display: inline-block;
+  margin-bottom: 1rem;
+  background: #2d4739;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.card .btn:hover {
+  background: #8b5e3c;
 }
 
-/* CTA */
-.cta {
-  text-align: center;
-  padding: 60px 20px;
-  background: #6aa84f; /* green background */
-  color: white;
+/* About Page */
+.about {
+  text-align: left;
 }
-.cta h2 {
-  margin-bottom: 15px;
-  font-size: 2rem;
+.about .row {
+  align-items: center;
 }
-.cta .btn-primary {
-  background: #8b5e3c; /* brown button */
+.about-text {
+  flex: 1;
+  padding: 1rem;
 }
-.cta .btn-primary:hover {
-  background: #70492f; /* darker brown */
+.about-img img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Contact Page */
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.contact form,
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+}
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact form button {
+  background: #2d4739;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.contact form button:hover {
+  background: #8b5e3c;
 }
 
 /* Footer */
-.footer {
-  background: #8b5e3c; /* brown */
-  color: white;
+footer {
+  background: #2d4739;
+  color: #fff;
   text-align: center;
-  padding: 20px;
-}
-.footer .social-icons {
-  margin-top: 10px;
-}
-.footer .social-icons i {
-  margin: 0 8px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.footer .social-icons i:hover {
-  color: #6aa84f; /* green hover */
+  padding: 1rem;
+  margin-top: 2rem;
 }
 
 /* Responsive */
-@media (max-width: 992px) {
-  .animal-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 @media (max-width: 768px) {
-  .nav-links {
-    display: none;
+  .row {
     flex-direction: column;
-    background: #8b5e3c; /* brown menu */
-    position: absolute;
-    top: 70px;
-    right: 0;
-    width: 200px;
-    padding: 15px;
+    align-items: center;
   }
-  .nav-links.active {
-    display: flex;
+  .site-header nav {
+    flex-direction: column;
   }
-  .menu-toggle {
-    display: block;
-    color: white;
-  }
-  .animal-grid {
-    grid-template-columns: 1fr;
-  }
-  .hero h1 {
-    font-size: 2rem;
+  .nav-links {
+    margin-top: 1rem;
   }
 }
