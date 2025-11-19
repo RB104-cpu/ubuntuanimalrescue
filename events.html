@@ -1,34 +1,142 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Events - Ubuntu Animal Rescue</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events - Ubuntu Animal Rescue | Fundraisers & Community Events</title>
+  <meta name="description" content="Join Ubuntu Animal Rescue events, fundraisers, and adoption drives. Participate in our community activities to support animal welfare in South Africa.">
+  <meta name="keywords" content="animal rescue events, fundraisers South Africa, adoption drives Johannesburg, volunteer events, community activities">
+  <meta name="author" content="Ubuntu Animal Rescue">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Events</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="adoption.html">Adoption</a>
-            <a href="donation.html">Donate</a>
-            <a href="events.html">Events</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Upcoming Events</h2>
-            <ul>
-                <li>Adoption Day - 5th Sept 2025</li>
-                <li>Fundraising Gala - 20th Sept 2025</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>© 2025 Ubuntu Animal Rescue</p>
-    </footer>
+  <header class="site-header">
+    <nav>
+      <a href="index.html" class="logo">Ubuntu Animal Rescue</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="adoption.html">Adopt</a></li>
+        <li><a href="events.html" class="active">Events</a></li>
+        <li><a href="donations.html">Donate</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="mobile-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <main class="events-page">
+    <section class="hero">
+      <h1>Upcoming Events</h1>
+      <p>Join us in making a difference for animals in need</p>
+    </section>
+
+    <section class="events-calendar">
+      <div class="container">
+        <h2>Event Calendar</h2>
+        <div class="events-grid">
+          <div class="event-card">
+            <div class="event-date">
+              <span class="month">JAN</span>
+              <span class="day">25</span>
+            </div>
+            <div class="event-info">
+              <h3>Adoption Day</h3>
+              <p class="event-time">📅 January 25, 2025 | 10:00 AM - 4:00 PM</p>
+              <p class="event-location">📍 Main Shelter, Johannesburg</p>
+              <p>Meet our adorable animals looking for forever homes. Special adoption fees!</p>
+              <button class="btn rsvp-btn">RSVP Now</button>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <div class="event-date">
+              <span class="month">FEB</span>
+              <span class="day">14</span>
+            </div>
+            <div class="event-info">
+              <h3>Valentine's Fundraiser</h3>
+              <p class="event-time">📅 February 14, 2025 | 6:00 PM - 10:00 PM</p>
+              <p class="event-location">📍 The Garden Venue, Sandton</p>
+              <p>Romantic evening gala with dinner, auctions, and animal meet-and-greets.</p>
+              <button class="btn rsvp-btn">Get Tickets</button>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <div class="event-date">
+              <span class="month">MAR</span>
+              <span class="day">8</span>
+            </div>
+            <div class="event-info">
+              <h3>Community Spay/Neuter Day</h3>
+              <p class="event-time">📅 March 8, 2025 | 8:00 AM - 5:00 PM</p>
+              <p class="event-location">📍 Community Hall, Alexandra</p>
+              <p>Free spay/neuter services for low-income households. Registration required.</p>
+              <button class="btn rsvp-btn">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="past-events">
+      <div class="container">
+        <h2>Past Events Gallery</h2>
+        <div class="events-gallery">
+          <div class="event-photo">
+            <img src="https://source.unsplash.com/300x200/?charity,event" alt="Christmas Fundraiser 2024">
+            <p>Christmas Fundraiser 2024</p>
+          </div>
+          <div class="event-photo">
+            <img src="https://source.unsplash.com/300x200/?adoption,event" alt="Summer Adoption Drive">
+            <p>Summer Adoption Drive</p>
+          </div>
+          <div class="event-photo">
+            <img src="https://source.unsplash.com/300x200/?volunteer,cleanup" alt="Beach Cleanup Day">
+            <p>Beach Cleanup Day</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="volunteer-cta">
+      <div class="container">
+        <h2>Want to Volunteer at Events?</h2>
+        <p>Join our amazing team of event volunteers and make a direct impact!</p>
+        <a href="contact.html" class="btn">Become a Volunteer</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <p>Email: info@ubuntuanimalrescue.org</p>
+        <p>Phone: +27 11 123 4567</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="adoption.html">Adoption Process</a></li>
+          <li><a href="events.html">Upcoming Events</a></li>
+          <li><a href="donations.html">Make a Donation</a></li>
+          <li><a href="contact.html">Contact Form</a></li>
+        </ul>
+      </div>
+    </div>
+    <p>&copy; 2025 Ubuntu Animal Rescue | Made with ❤️ by Nixo</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/events.js"></script>
 </body>
 </html>
