@@ -3,8 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - Ubuntu Animal Rescue</title>
+  <title>Contact Us - Ubuntu Animal Rescue | Get in Touch</title>
+  <meta name="description" content="Contact Ubuntu Animal Rescue for inquiries, volunteer opportunities, or general information. We're here to help animals and connect with our community.">
+  <meta name="keywords" content="contact animal rescue, volunteer inquiry, general information, animal shelter contact, South Africa animal rescue">
+  <meta name="author" content="Ubuntu Animal Rescue">
+  <meta name="robots" content="index, follow">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
   <header class="site-header">
@@ -14,40 +19,54 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="adoption.html">Adopt</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="donations.html">Donate</a></li>
         <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
+      <div class="mobile-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
   </header>
 
-  <section class="page-header">
-    <h1>Contact Us</h1>
-    <p>We’d love to hear from you! Reach out to adopt, volunteer, or donate.</p>
-  </section>
+  <main class="contact-page">
+    <section class="hero">
+      <h1>Get in Touch</h1>
+      <p>We'd love to hear from you. Reach out with any questions or inquiries.</p>
+    </section>
 
-  <section class="contact">
-    <form>
-      <label for="name">Full Name</label>
-      <input type="text" id="name" placeholder="Your name" required>
+    <section class="contact-content">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h2>Contact Information</h2>
+            <div class="contact-item">
+              <h3>📍 Address</h3>
+              <p>123 Animal Rescue Street<br>Johannesburg, 2000<br>South Africa</p>
+            </div>
+            <div class="contact-item">
+              <h3>📞 Phone</h3>
+              <p>+27 11 123 4567</p>
+            </div>
+            <div class="contact-item">
+              <h3>📧 Email</h3>
+              <p>info@ubuntuanimalrescue.org</p>
+            </div>
+            <div class="contact-item">
+              <h3>🕒 Hours</h3>
+              <p>Monday - Friday: 9:00 AM - 5:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+            </div>
+          </div>
 
-      <label for="email">Email</label>
-      <input type="email" id="email" placeholder="Your email" required>
-
-      <label for="message">Message</label>
-      <textarea id="message" rows="5" placeholder="Your message..." required></textarea>
-
-      <button type="submit" class="btn">Send Message</button>
-    </form>
-    <div class="contact-info">
-      <h3>Visit Us</h3>
-      <p>Pretoria, South Africa</p>
-      <p>Email: info@ubuntuanimals.org</p>
-      <p>Phone: +27 12 345 6789</p>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Ubuntu Animal Rescue | Made with ❤️ by Nixo</p>
-  </footer>
-  <script src="js/script.js"></script>
-</body>
-</html>
+          <div class="contact-form-container">
+            <h2>Send us a Message</h2>
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required minlength="2">
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="
