@@ -19,6 +19,31 @@ body {
   padding: 0 2rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
+/* ===== TYPOGRAPHY & UTILITIES ===== */
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+.features h2,
+.gallery-section h2,
+.location-map h2 {
+  color: #2d4739;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
 /* ===== BUTTON STYLES ===== */
 .btn {
   display: inline-block;
@@ -114,16 +139,10 @@ body {
   margin-top: 60px;
 }
 
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  max-width: 600px;
+.donations-page .hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+              url('https://source.unsplash.com/1600x900/?donation,charity,help');
+  height: 60vh;
 }
 
 /* ===== CARD COMPONENTS ===== */
@@ -174,28 +193,16 @@ section {
   margin-top: 2rem;
 }
 
-.features {
+.features,
+.gallery-section {
   text-align: center;
 }
 
-.features h2 {
-  color: #2d4739;
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+.gallery-section {
+  background: #f8f9fa;
 }
 
 /* ===== GALLERY & LIGHTBOX ===== */
-.gallery-section {
-  background: #f8f9fa;
-  text-align: center;
-}
-
-.gallery-section h2 {
-  color: #2d4739;
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -257,64 +264,12 @@ section {
   text-align: center;
 }
 
-.location-map h2 {
-  color: #2d4739;
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
 #map {
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   overflow: hidden;
 }
 
-/* ===== FOOTER ===== */
-footer {
-  background: #2d4739;
-  color: #fff;
-  padding: 3rem 2rem 1rem;
-  margin-top: 2rem;
-}
-
-.footer-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 3rem;
-  max-width: 1200px;
-  margin: 0 auto 2rem;
-}
-
-.footer-section h3 {
-  color: #d99152;
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-}
-
-.footer-section ul {
-  list-style: none;
-}
-
-.footer-section ul li {
-  margin-bottom: 0.5rem;
-}
-
-.footer-section a {
-  color: white;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.footer-section a:hover {
-  color: #d99152;
-}
-
-footer > p {
-  text-align: center;
-  padding-top: 2rem;
-  border-top: 1px solid rgba(255,255,255,0.1);
-  color: rgba(255,255,255,0.7);
-}
 /* ===== FORM STYLES ===== */
 .contact-form,
 .donation-form {
@@ -388,7 +343,14 @@ footer > p {
   border: 1px solid #c3e6cb;
 }
 
-/* Contact Page Specific Styles */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== CONTACT PAGE STYLES ===== */
 .contact-page .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -440,103 +402,7 @@ footer > p {
   opacity: 0.9;
 }
 
-/* Donation Form Styles */
-.amount-options {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.8rem;
-  margin: 1.5rem 0;
-  justify-content: center;
-}
-
-.amount-btn {
-  padding: 0.8rem 1.5rem;
-  border: 2px solid #d99152;
-  background: white;
-  color: #d99152;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-weight: bold;
-  font-size: 0.9rem;
-}
-
-.amount-btn:hover,
-.amount-btn.active {
-  background: #d99152;
-  color: white;
-  transform: translateY(-2px);
-}
-
-/* Fix for image display */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-.card img,
-.gallery-img,
-.team-member img,
-.pet-card img,
-.event-photo img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-/* Ensure Unsplash images load properly */
-.card img {
-  height: 200px;
-}
-
-.gallery-img {
-  height: 200px;
-}
-
-.team-member img {
-  height: 150px;
-}
-
-.pet-card img {
-  height: 250px;
-}
-
-.event-photo img {
-  height: 200px;
-}
-
-/* Loading states for images */
-img {
-  background: #f5f0e6;
-  transition: opacity 0.3s ease;
-}
-
-img[src*="unsplash"] {
-  background: linear-gradient(45deg, #f5f0e6, #e8dfd1);
-}
-
-/* ===== DONATION PAGE SPECIFIC STYLES ===== */
-.donations-page .hero {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-              url('https://source.unsplash.com/1600x900/?donation,charity,help');
-  background-size: cover;
-  background-position: center;
-  height: 60vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  padding: 0 2rem;
-  margin-top: 60px;
-}
-
-.text-center {
-  text-align: center;
-}
-
+/* ===== DONATION PAGE STYLES ===== */
 .donation-impact {
   background: #f8f9fa;
   padding: 4rem 2rem;
@@ -685,22 +551,6 @@ img[src*="unsplash"] {
   padding: 4rem 2rem;
 }
 
-.donation-form {
-  max-width: 800px;
-  margin: 0 auto;
-  background: white;
-  padding: 3rem;
-  border-radius: 15px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-}
-
-.form-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
 .donation-security {
   background: #2d4739;
   color: white;
@@ -721,48 +571,81 @@ img[src*="unsplash"] {
   line-height: 1.6;
 }
 
-/* Responsive adjustments for donation page */
-@media (max-width: 768px) {
-  .form-row {
-    grid-template-columns: 1fr;
-    gap: 0;
-  }
-  
-  .donation-methods {
-    grid-template-columns: 1fr;
-  }
-  
-  .donation-form {
-    padding: 2rem 1.5rem;
-  }
-  
-  .impact-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .amount-options {
-    flex-direction: column;
-  }
-  
-  .amount-btn {
-    min-width: auto;
-  }
+/* ===== IMAGE STYLES ===== */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  background: #f5f0e6;
+  transition: opacity 0.3s ease;
 }
 
-@media (max-width: 480px) {
-  .donations-page .hero {
-    height: 50vh;
-  }
-  
-  .method-card {
-    padding: 2rem 1.5rem;
-  }
-  
-  .impact-item {
-    padding: 2rem 1.5rem;
-  }
+.card img,
+.gallery-img,
+.team-member img,
+.pet-card img,
+.event-photo img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
+.card img { height: 200px; }
+.gallery-img { height: 200px; }
+.team-member img { height: 150px; }
+.pet-card img { height: 250px; }
+.event-photo img { height: 200px; }
+
+img[src*="unsplash"] {
+  background: linear-gradient(45deg, #f5f0e6, #e8dfd1);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #2d4739;
+  color: #fff;
+  padding: 3rem 2rem 1rem;
+  margin-top: 2rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+}
+
+.footer-section h3 {
+  color: #d99152;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section a:hover {
+  color: #d99152;
+}
+
+footer > p {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.7);
+}
 
 /* ===== ANIMATIONS ===== */
 @keyframes fadeIn {
@@ -793,6 +676,12 @@ img[src*="unsplash"] {
   
   .hero p {
     font-size: 1rem;
+  }
+  
+  .features h2,
+  .gallery-section h2,
+  .location-map h2 {
+    font-size: 2rem;
   }
   
   .mobile-menu-btn {
@@ -843,6 +732,32 @@ img[src*="unsplash"] {
   .container {
     padding: 0 1rem;
   }
+  
+  .contact-page .contact-grid,
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  
+  .donation-methods {
+    grid-template-columns: 1fr;
+  }
+  
+  .donation-form {
+    padding: 2rem 1.5rem;
+  }
+  
+  .impact-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .amount-options {
+    flex-direction: column;
+  }
+  
+  .amount-btn {
+    min-width: auto;
+  }
 }
 
 @media (max-width: 480px) {
@@ -851,17 +766,23 @@ img[src*="unsplash"] {
     margin-top: 50px;
   }
   
+  .donations-page .hero {
+    height: 50vh;
+  }
+  
   .hero h1 {
     font-size: 1.8rem;
   }
   
-  .features h2,
-  .gallery-section h2,
-  .location-map h2 {
-    font-size: 2rem;
-  }
-  
   .card {
     max-width: 100%;
+  }
+  
+  .method-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .impact-item {
+    padding: 2rem 1.5rem;
   }
 }
