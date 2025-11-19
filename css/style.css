@@ -516,6 +516,253 @@ img[src*="unsplash"] {
   background: linear-gradient(45deg, #f5f0e6, #e8dfd1);
 }
 
+/* ===== DONATION PAGE SPECIFIC STYLES ===== */
+.donations-page .hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+              url('https://source.unsplash.com/1600x900/?donation,charity,help');
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 0 2rem;
+  margin-top: 60px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.donation-impact {
+  background: #f8f9fa;
+  padding: 4rem 2rem;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.impact-item {
+  background: white;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  border-top: 5px solid #d99152;
+  transition: transform 0.3s ease;
+}
+
+.impact-item:hover {
+  transform: translateY(-5px);
+}
+
+.impact-item h3 {
+  color: #d99152;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.impact-item p {
+  color: #2d4739;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.donation-options {
+  padding: 4rem 2rem;
+  background: white;
+}
+
+.donation-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+.method-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  text-align: center;
+  border: 2px solid #f0f0f0;
+  transition: all 0.3s ease;
+}
+
+.method-card:hover {
+  border-color: #d99152;
+  transform: translateY(-5px);
+}
+
+.method-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.method-card h3 {
+  color: #2d4739;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.method-card p {
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.amount-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin: 2rem 0;
+  justify-content: center;
+}
+
+.amount-btn {
+  padding: 1rem 1.5rem;
+  border: 2px solid #d99152;
+  background: white;
+  color: #d99152;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  font-size: 1rem;
+  flex: 1;
+  min-width: 100px;
+}
+
+.amount-btn:hover,
+.amount-btn.active {
+  background: #d99152;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.custom-amount-input {
+  padding: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.custom-amount-input:focus {
+  outline: none;
+  border-color: #d99152;
+}
+
+.help-options {
+  list-style: none;
+  text-align: left;
+  margin: 1.5rem 0;
+}
+
+.help-options li {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #f0f0f0;
+  color: #2d4739;
+}
+
+.help-options li:last-child {
+  border-bottom: none;
+}
+
+.donation-form-section {
+  background: #f8f9fa;
+  padding: 4rem 2rem;
+}
+
+.donation-form {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 3rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.donation-security {
+  background: #2d4739;
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.security-info h3 {
+  color: #d99152;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.security-info p {
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Responsive adjustments for donation page */
+@media (max-width: 768px) {
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  
+  .donation-methods {
+    grid-template-columns: 1fr;
+  }
+  
+  .donation-form {
+    padding: 2rem 1.5rem;
+  }
+  
+  .impact-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .amount-options {
+    flex-direction: column;
+  }
+  
+  .amount-btn {
+    min-width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .donations-page .hero {
+    height: 50vh;
+  }
+  
+  .method-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .impact-item {
+    padding: 2rem 1.5rem;
+  }
+}
+
 
 /* ===== ANIMATIONS ===== */
 @keyframes fadeIn {
