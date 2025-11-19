@@ -315,6 +315,207 @@ footer > p {
   border-top: 1px solid rgba(255,255,255,0.1);
   color: rgba(255,255,255,0.7);
 }
+/* ===== FORM STYLES ===== */
+.contact-form,
+.donation-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  margin-top: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #2d4739;
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: #fafafa;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #d99152;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(217, 145, 82, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+  font-family: Arial, sans-serif;
+}
+
+.form-group input.error,
+.form-group select.error,
+.form-group textarea.error {
+  border-color: #e74c3c;
+  background: #fdf2f2;
+}
+
+.field-error {
+  color: #e74c3c;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  display: block;
+}
+
+.form-success {
+  background: #d4edda;
+  color: #155724;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: 1px solid #c3e6cb;
+}
+
+/* Contact Page Specific Styles */
+.contact-page .contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.contact-info {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+.contact-item {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.contact-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.contact-item h3 {
+  color: #2d4739;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.emergency-contact {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  color: white;
+  text-align: center;
+  padding: 3rem 2rem;
+  margin: 3rem 0;
+  border-radius: 10px;
+}
+
+.emergency-number h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.emergency-number p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Donation Form Styles */
+.amount-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin: 1.5rem 0;
+  justify-content: center;
+}
+
+.amount-btn {
+  padding: 0.8rem 1.5rem;
+  border: 2px solid #d99152;
+  background: white;
+  color: #d99152;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.amount-btn:hover,
+.amount-btn.active {
+  background: #d99152;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Fix for image display */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card img,
+.gallery-img,
+.team-member img,
+.pet-card img,
+.event-photo img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Ensure Unsplash images load properly */
+.card img {
+  height: 200px;
+}
+
+.gallery-img {
+  height: 200px;
+}
+
+.team-member img {
+  height: 150px;
+}
+
+.pet-card img {
+  height: 250px;
+}
+
+.event-photo img {
+  height: 200px;
+}
+
+/* Loading states for images */
+img {
+  background: #f5f0e6;
+  transition: opacity 0.3s ease;
+}
+
+img[src*="unsplash"] {
+  background: linear-gradient(45deg, #f5f0e6, #e8dfd1);
+}
+
 
 /* ===== ANIMATIONS ===== */
 @keyframes fadeIn {
