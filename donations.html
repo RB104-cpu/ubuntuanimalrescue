@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate - Ubuntu Animal Rescue | Support Animal Welfare</title>
+  <meta name="description" content="Support Ubuntu Animal Rescue through donations. Your contribution helps rescue, feed, and provide medical care for animals in need across South Africa.">
+  <meta name="keywords" content="donate to animal rescue, animal charity South Africa, support animal welfare, fundraising, pet rescue donations">
+  <meta name="author" content="Ubuntu Animal Rescue">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav>
+      <a href="index.html" class="logo">Ubuntu Animal Rescue</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="adoption.html">Adopt</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="donations.html" class="active">Donate</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="mobile-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <main class="donations-page">
+    <section class="hero">
+      <h1>Make a Difference Today</h1>
+      <p>Your donation provides food, shelter, and medical care for animals in need</p>
+    </section>
+
+    <section class="donation-impact">
+      <div class="container">
+        <h2>Your Impact</h2>
+        <p class="text-center" style="margin-bottom: 2rem;">See how your contribution directly helps animals in need</p>
+        <div class="impact-grid">
+          <div class="impact-item">
+            <h3>R250</h3>
+            <p>Feeds one animal for a month</p>
+          </div>
+          <div class="impact-item">
+            <h3>R500</h3>
+            <p>Vaccinates two animals</p>
+          </div>
+          <div class="impact-item">
+            <h3>R1000</h3>
+            <p>Covers spay/neuter surgery</p>
+          </div>
+          <div class="impact-item">
+            <h3>R2500</h3>
+            <p>Emergency medical treatment</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="donation-options">
+      <div class="container">
+        <h2>Ways to Give</h2>
+        <p class="text-center" style="margin-bottom: 3rem;">Choose the donation method that works best for you</p>
+        
+        <div class="donation-methods">
+          <div class="method-card">
+            <div class="method-icon">💫</div>
+            <h3>One-Time Donation</h3>
+            <p>Make a single donation to support our immediate needs</p>
+            <div class="amount-options">
+              <button type="button" class="amount-btn" data-amount="100">R100</button>
+              <button type="button" class="amount-btn" data-amount="250">R250</button>
+              <button type="button" class="amount-btn" data-amount="500">R500</button>
+              <button type="button" class="amount-btn" data-amount="1000">R1000</button>
+              <input type="number" id="custom-amount" placeholder="Other amount" class="custom-amount-input">
+            </div>
+            <button type="button" class="btn donate-btn" style="width: 100%; margin-top: 1rem;">Donate Now</button>
+          </div>
+
+          <div class="method-card">
+            <div class="method-icon">🔄</div>
+            <h3>Monthly Support</h3>
+            <p>Become a monthly donor and provide consistent support</p>
+            <div class="amount-options">
+              <button type="button" class="amount-btn" data-amount="50">R50/month</button>
+              <button type="button" class="amount-btn" data-amount="100">R100/month</button>
+              <button type="button" class="amount-btn" data-amount="200">R200/month</button>
+              <input type="number" id="custom-monthly" placeholder="Other amount" class="custom-amount-input">
+            </div>
+            <button type="button" class="btn donate-btn" style="width: 100%; margin-top: 1rem;">Start Monthly Giving</button>
+          </div>
+
+          <div class="method-card">
+            <div class="method-icon">🤝</div>
+            <h3>Other Ways to Help</h3>
+            <p>Explore additional ways to support our mission</p>
+            <ul class="help-options">
+              <li>🐾 Sponsor an animal's care</li>
+              <li>🛒 Donate supplies from our wishlist</li>
+              <li>🏠 Become a foster parent</li>
+              <li>💼 Corporate partnerships</li>
+              <li>🎂 Fundraise for your birthday</li>
+            </ul>
+            <a href="contact.html" class="btn" style="width: 100%; margin-top: 1rem; background: #2d4739;">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="donation-form-section">
+      <div class="container">
+        <h2>Make a Donation</h2>
+        <p class="text-center" style="margin-bottom: 2rem;">Complete your donation using the secure form below</p>
+        
+        <form class="donation-form" id="donationForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="donor-name">Full Name *</label>
+              <input type="text" id="donor-name" name="donor-name" required placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+              <label for="donor-email">Email *</label>
+              <input type="email" id="donor-email" name="donor-email" required placeholder="your.email@example.com">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="donation-amount">Donation Amount (R) *</label>
+              <input type="number" id="donation-amount" name="donation-amount" min="10" required placeholder="Enter amount">
+            </div>
+            <div class="form-group">
+              <label for="donation-type">Donation Type *</label>
+              <select id="donation-type" name="donation-type" required>
+                <option value="">Select type</option>
+                <option value="one-time">One-Time Donation</option>
+                <option value="monthly">Monthly Donation</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="payment-method">Payment Method *</label>
+            <select id="payment-method" name="payment-method" required>
+              <option value="">Select method</option>
+              <option value="credit-card">Credit Card</option>
+              <option value="debit-card">Debit Card</option>
+              <option value="paypal">PayPal</option>
+              <option value="eft">Bank Transfer</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="donor-message">Message (Optional)</label>
+            <textarea id="donor-message" name="donor-message" rows="3" placeholder="Add a personal message or dedication..."></textarea>
+          </div>
+
+          <div class="form-group" style="text-align: center;">
+            <button type="submit" class="btn" style="padding: 1rem 2rem; font-size: 1.1rem; width: 100%;">
+              Process Donation
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="donation-security">
+      <div class="container">
+        <div class="security-info">
+          <h3>🔒 Secure Donations</h3>
+          <p>Your donation is processed through secure encrypted channels. We never store your payment information.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <p>📍 123 Animal Rescue Street, Johannesburg</p>
+        <p>📞 +27 11 123 4567</p>
+        <p>📧 info@ubuntuanimalrescue.org</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="adoption.html">Adoption Process</a></li>
+          <li><a href="events.html">Upcoming Events</a></li>
+          <li><a href="donations.html">Make a Donation</a></li>
+          <li><a href="contact.html">Contact Form</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Tax Information</h3>
+        <p>Ubuntu Animal Rescue is a registered NPO</p>
+        <p>Tax Deductible Donations</p>
+        <p>NPO No: 123-456</p>
+      </div>
+    </div>
+    <p>&copy; 2025 Ubuntu Animal Rescue | Made with ❤️ by Nixo</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/forms.js"></script>
+</body>
+</html>
