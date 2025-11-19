@@ -12,7 +12,7 @@ A comprehensive website for Ubuntu Animal Rescue, a non-profit organization dedi
 - **Contact** (`contact.html`) - Contact forms and location information
 
 ## Technical Stack
-- **Frontend**: HTML5, CSS3, JavaScript (ES6+)
+- **Frontend**: HTML5, CSS3, JavaScript 
 - **Libraries**: jQuery, Leaflet.js (Maps)
 - **Styling**: Custom CSS with responsive design
 - **Icons**: Font Awesome (via CDN)
