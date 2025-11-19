@@ -9,7 +9,6 @@
   <meta name="author" content="Ubuntu Animal Rescue">
   <meta name="robots" content="index, follow">
   <link rel="stylesheet" href="css/style.css">
-  <!-- jQuery for interactive elements -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
@@ -34,52 +33,94 @@
     </nav>
   </header>
 
-  <!-- Hero -->
+  <!-- Hero Section -->
   <section class="hero">
-    <h1>Give Animals a Second Chance</h1>
-    <p>Join us in rescuing, caring, and rehoming animals across South Africa.</p>
-    <a href="adoption.html" class="btn">Adopt Today</a>
+    <h1 class="fade-in">Give Animals a Second Chance</h1>
+    <p class="fade-in">Join us in rescuing, caring, and rehoming animals across South Africa. Every life matters.</p>
+    <a href="adoption.html" class="btn fade-in">Adopt Today</a>
   </section>
 
-  <!-- Featured -->
+  <!-- Features Section -->
   <section class="features">
-    <h2>Our Mission</h2>
-    <div class="row">
-      <div class="card">
-        <img src="https://source.unsplash.com/400x250/?dog,shelter" alt="Dog rescue and rehabilitation at Ubuntu Animal Rescue">
-        <h3>Rescue</h3>
-        <p>We provide immediate care for stray, abandoned, and abused animals.</p>
-        <button class="learn-more-btn">Learn More</button>
-      </div>
-      <div class="card">
-        <img src="https://source.unsplash.com/400x250/?cat,shelter" alt="Cat medical care and shelter services">
-        <h3>Care</h3>
-        <p>Every rescued animal receives medical attention, shelter, and love.</p>
-        <button class="learn-more-btn">Learn More</button>
-      </div>
-      <div class="card">
-        <img src="https://source.unsplash.com/400x250/?adopt,pet" alt="Pet adoption process and available animals">
-        <h3>Adopt</h3>
-        <p>We help animals find their forever homes with caring families.</p>
-        <button class="learn-more-btn">Learn More</button>
+    <div class="container">
+      <h2>Our Mission</h2>
+      <p>We are committed to providing compassionate care and finding loving homes for animals in need.</p>
+      <div class="row">
+        <div class="card fade-in">
+          <img src="https://source.unsplash.com/400x250/?dog,rescue" alt="Dog rescue and rehabilitation services">
+          <h3>Rescue & Rehabilitate</h3>
+          <p>We provide immediate care and medical attention for stray, abandoned, and abused animals, giving them a second chance at life.</p>
+        </div>
+        <div class="card fade-in">
+          <img src="https://source.unsplash.com/400x250/?veterinary,care" alt="Animal medical care and shelter">
+          <h3>Medical Care</h3>
+          <p>Every rescued animal receives comprehensive veterinary care, vaccinations, and spay/neuter services to ensure their health and wellbeing.</p>
+        </div>
+        <div class="card fade-in">
+          <img src="https://source.unsplash.com/400x250/?happy,adoption" alt="Pet adoption success stories">
+          <h3>Find Forever Homes</h3>
+          <p>We carefully match animals with loving families, ensuring successful adoptions and lifelong companionship.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Interactive Map Section -->
-  <section class="location-map">
-    <h2>Find Our Shelter</h2>
-    <div id="map" style="height: 400px; width: 100%;"></div>
+  <!-- Impact Stats -->
+  <section class="location-map" style="background: #f8f9fa;">
+    <div class="container">
+      <h2>Our Impact</h2>
+      <div class="row">
+        <div class="card" style="text-align: center; padding: 2rem;">
+          <h3 style="font-size: 2.5rem; color: #d99152; margin: 0;">5,000+</h3>
+          <p style="font-weight: bold; color: #2d4739;">Animals Rescued</p>
+        </div>
+        <div class="card" style="text-align: center; padding: 2rem;">
+          <h3 style="font-size: 2.5rem; color: #d99152; margin: 0;">4,200+</h3>
+          <p style="font-weight: bold; color: #2d4739;">Successful Adoptions</p>
+        </div>
+        <div class="card" style="text-align: center; padding: 2rem;">
+          <h3 style="font-size: 2.5rem; color: #d99152; margin: 0;">15+</h3>
+          <p style="font-weight: bold; color: #2d4739;">Years of Service</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Image Gallery Section -->
+  <!-- Gallery Section -->
   <section class="gallery-section">
-    <h2>Our Happy Animals</h2>
-    <div class="gallery-grid">
-      <img src="https://source.unsplash.com/300x200/?happy,dog" alt="Happy rescued dog at our shelter" class="gallery-img">
-      <img src="https://source.unsplash.com/300x200/?happy,cat" alt="Rescued cat enjoying our care" class="gallery-img">
-      <img src="https://source.unsplash.com/300x200/?animal,adoption" alt="Successful pet adoption story" class="gallery-img">
-      <img src="https://source.unsplash.com/300x200/?volunteer,animal" alt="Animal rescue volunteers at work" class="gallery-img">
+    <div class="container">
+      <h2>Our Happy Animals</h2>
+      <p>Meet some of the beautiful souls we've helped find their forever homes</p>
+      <div class="gallery-grid">
+        <img src="https://source.unsplash.com/300x200/?happy,dog,rescue" alt="Rescued dog enjoying new life" class="gallery-img">
+        <img src="https://source.unsplash.com/300x200/?happy,cat,adoption" alt="Adopted cat in loving home" class="gallery-img">
+        <img src="https://source.unsplash.com/300x200/?animal,volunteer,care" alt="Volunteer caring for animals" class="gallery-img">
+        <img src="https://source.unsplash.com/300x200/?puppy,playful" alt="Playful puppy at our shelter" class="gallery-img">
+        <img src="https://source.unsplash.com/300x200/?kitten,cute" alt="Adorable kitten ready for adoption" class="gallery-img">
+        <img src="https://source.unsplash.com/300x200/?animal,family" alt="Happy family with adopted pet" class="gallery-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- Location Map -->
+  <section class="location-map">
+    <div class="container">
+      <h2>Visit Our Shelter</h2>
+      <p>Come meet our animals and see our facility</p>
+      <div id="map" style="height: 400px; width: 100%;"></div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="features" style="background: #2d4739; color: white;">
+    <div class="container">
+      <h2 style="color: white;">Ready to Make a Difference?</h2>
+      <p>Whether you want to adopt, volunteer, or support our mission, every action counts.</p>
+      <div class="row">
+        <a href="adoption.html" class="btn" style="background: #d99152; margin: 0.5rem;">Adopt a Pet</a>
+        <a href="donations.html" class="btn" style="background: white; color: #2d4739; margin: 0.5rem;">Make a Donation</a>
+        <a href="contact.html" class="btn" style="background: transparent; border: 2px solid white; margin: 0.5rem;">Volunteer</a>
+      </div>
     </div>
   </section>
 
@@ -87,7 +128,7 @@
   <div id="lightbox" class="lightbox">
     <span class="close-lightbox">&times;</span>
     <img class="lightbox-content" id="lightbox-img">
-    <div id="caption"></div>
+    <div id="caption" style="color: white; text-align: center; padding: 1rem;"></div>
   </div>
 
   <!-- Footer -->
@@ -95,8 +136,9 @@
     <div class="footer-content">
       <div class="footer-section">
         <h3>Contact Info</h3>
-        <p>Email: info@ubuntuanimalrescue.org</p>
-        <p>Phone: +27 11 123 4567</p>
+        <p>📍 123 Animal Rescue Street, Johannesburg</p>
+        <p>📞 +27 11 123 4567</p>
+        <p>📧 info@ubuntuanimalrescue.org</p>
       </div>
       <div class="footer-section">
         <h3>Quick Links</h3>
@@ -108,6 +150,15 @@
           <li><a href="contact.html">Contact Form</a></li>
         </ul>
       </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <p>Stay updated on our latest rescues and events</p>
+        <div style="margin-top: 1rem;">
+          <a href="#" class="btn" style="background: #3b5998; padding: 0.5rem 1rem; margin: 0.25rem;">Facebook</a>
+          <a href="#" class="btn" style="background: #1da1f2; padding: 0.5rem 1rem; margin: 0.25rem;">Twitter</a>
+          <a href="#" class="btn" style="background: #e4405f; padding: 0.5rem 1rem; margin: 0.25rem;">Instagram</a>
+        </div>
+      </div>
     </div>
     <p>&copy; 2025 Ubuntu Animal Rescue | Made with ❤️ by Nixo</p>
   </footer>
@@ -116,7 +167,6 @@
   <script src="js/script.js"></script>
   <script src="js/map.js"></script>
   <script src="js/gallery.js"></script>
-  <script src="js/forms.js"></script>
   
   <!-- Leaflet Map Library -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
