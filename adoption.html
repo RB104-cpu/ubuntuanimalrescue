@@ -3,8 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adopt - Ubuntu Animal Rescue</title>
+  <title>Adopt a Pet - Ubuntu Animal Rescue | Find Your Forever Friend</title>
+  <meta name="description" content="Browse adoptable pets at Ubuntu Animal Rescue. Dogs, cats, and other animals waiting for their forever homes. Adoption process and requirements.">
+  <meta name="keywords" content="pet adoption, adopt dogs South Africa, adopt cats Johannesburg, animal adoption process, rescue pets for adoption">
+  <meta name="author" content="Ubuntu Animal Rescue">
+  <meta name="robots" content="index, follow">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
   <header class="site-header">
@@ -14,42 +19,119 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="adoption.html" class="active">Adopt</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="donations.html">Donate</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <div class="mobile-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
   </header>
 
-  <section class="page-header">
-    <h1>Adopt a Friend</h1>
-    <p>Find your new best friend and give them a forever home.</p>
-  </section>
+  <main class="adoption-page">
+    <section class="hero">
+      <h1>Find Your Forever Friend</h1>
+      <p>Meet our wonderful animals waiting for loving homes</p>
+    </section>
 
-  <section class="adopt-list">
-    <div class="row">
-      <div class="card">
-        <img src="https://source.unsplash.com/400x300/?puppy" alt="Adopt Dog">
-        <h3>Max</h3>
-        <p>Playful 2-year-old Labrador, great with kids.</p>
-        <a href="contact.html" class="btn">Adopt</a>
+    <section class="adoption-process">
+      <div class="container">
+        <h2>Adoption Process</h2>
+        <div class="process-steps">
+          <div class="step">
+            <h3>1. Browse</h3>
+            <p>View our available animals online or visit our shelter</p>
+          </div>
+          <div class="step">
+            <h3>2. Apply</h3>
+            <p>Fill out our adoption application form</p>
+          </div>
+          <div class="step">
+            <h3>3. Meet</h3>
+            <p>Schedule a meeting with your chosen pet</p>
+          </div>
+          <div class="step">
+            <h3>4. Home Check</h3>
+            <p>We ensure your home is ready for a new pet</p>
+          </div>
+          <div class="step">
+            <h3>5. Adopt</h3>
+            <p>Finalize paperwork and take your new friend home!</p>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <img src="https://source.unsplash.com/400x300/?kitten" alt="Adopt Cat">
-        <h3>Luna</h3>
-        <p>Gentle 1-year-old tabby, loves cuddles.</p>
-        <a href="contact.html" class="btn">Adopt</a>
+    </section>
+
+    <section class="available-pets">
+      <div class="container">
+        <h2>Available for Adoption</h2>
+        <div class="search-filter">
+          <input type="text" id="pet-search" placeholder="Search by name, breed, or type...">
+          <select id="pet-type">
+            <option value="all">All Animals</option>
+            <option value="dog">Dogs</option>
+            <option value="cat">Cats</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="pets-grid" id="pets-container">
+          <!-- Pets will be loaded dynamically -->
+        </div>
       </div>
-      <div class="card">
-        <img src="https://source.unsplash.com/400x300/?dog" alt="Adopt Pet">
-        <h3>Bella</h3>
-        <p>Energetic 3-year-old mixed breed, loves walks.</p>
-        <a href="contact.html" class="btn">Adopt</a>
+    </section>
+
+    <section class="adoption-faq">
+      <div class="container">
+        <h2>Adoption FAQ</h2>
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <h3>What are the adoption fees?</h3>
+            <div class="faq-answer">
+              <p>Adoption fees range from R500 to R1500 depending on the animal. This includes vaccinations, spay/neuter, and microchipping.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <h3>What are the requirements to adopt?</h3>
+            <div class="faq-answer">
+              <p>You must be 18+ years old, have valid ID, proof of address, and consent from all household members.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <h3>Can I return an animal if it doesn't work out?</h3>
+            <div class="faq-answer">
+              <p>Yes, we have a 30-day trial period. If the adoption doesn't work out, we'll take the animal back and help you find a better match.</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <p>Email: info@ubuntuanimalrescue.org</p>
+        <p>Phone: +27 11 123 4567</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="adoption.html">Adoption Process</a></li>
+          <li><a href="events.html">Upcoming Events</a></li>
+          <li><a href="donations.html">Make a Donation</a></li>
+          <li><a href="contact.html">Contact Form</a></li>
+        </ul>
+      </div>
+    </div>
     <p>&copy; 2025 Ubuntu Animal Rescue | Made with ❤️ by Nixo</p>
   </footer>
+
   <script src="js/script.js"></script>
+  <script src="js/adoption.js"></script>
 </body>
 </html>
