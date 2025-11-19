@@ -3,8 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - Ubuntu Animal Rescue</title>
+  <title>About Us - Ubuntu Animal Rescue | Our Story & Mission</title>
+  <meta name="description" content="Learn about Ubuntu Animal Rescue's mission, history, and team. Discover how we rescue and care for animals in South Africa since 2010.">
+  <meta name="keywords" content="about animal rescue, Ubuntu mission, animal shelter history, rescue team South Africa, animal welfare organization">
+  <meta name="author" content="Ubuntu Animal Rescue">
+  <meta name="robots" content="index, follow">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
   <header class="site-header">
@@ -14,40 +19,109 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html" class="active">About</a></li>
         <li><a href="adoption.html">Adopt</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="donations.html">Donate</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <div class="mobile-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
   </header>
 
-  <section class="page-header">
-    <h1>About Us</h1>
-  </section>
+  <main class="about-page">
+    <section class="hero">
+      <h1>About Ubuntu Animal Rescue</h1>
+      <p>Compassionate care for animals since 2010</p>
+    </section>
 
-  <section class="about">
-    <div class="row">
-      <div class="about-text">
-        <h2>Who We Are</h2>
-        <p>Ubuntu Animal Rescue is a non-profit organization based in Pretoria. 
-        We are dedicated to rescuing abandoned, abused, and stray animals, 
-        providing them with care, and finding them loving homes.</p>
+    <section class="about-content">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text">
+            <h2>Our Story</h2>
+            <p>Founded in 2010, Ubuntu Animal Rescue began with a simple mission: to provide shelter, medical care, and loving homes for abandoned and abused animals across South Africa. The name "Ubuntu" reflects our philosophy - "I am because we are" - emphasizing community and interconnectedness.</p>
+            
+            <h3>What We Do</h3>
+            <ul>
+              <li>Rescue abandoned and abused animals</li>
+              <li>Provide medical treatment and rehabilitation</li>
+              <li>Facilitate adoptions to loving homes</li>
+              <li>Educate communities about animal welfare</li>
+              <li>Run spay/neuter programs</li>
+            </ul>
 
-        <h2>Our Values</h2>
-        <ul>
-          <li>Compassion for all living beings</li>
-          <li>Transparency and accountability</li>
-          <li>Community-driven rescue efforts</li>
-          <li>Promoting responsible pet ownership</li>
-        </ul>
+            <h3>Our Achievements</h3>
+            <div class="stats-grid">
+              <div class="stat-card">
+                <h4>5,000+</h4>
+                <p>Animals Rescued</p>
+              </div>
+              <div class="stat-card">
+                <h4>4,200+</h4>
+                <p>Successful Adoptions</p>
+              </div>
+              <div class="stat-card">
+                <h4>15+</h4>
+                <p>Years of Service</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-image">
+            <img src="https://source.unsplash.com/500x600/?animal,shelter,volunteer" alt="Ubuntu Animal Rescue team and volunteers">
+          </div>
+        </div>
       </div>
-      <div class="about-img">
-        <img src="https://source.unsplash.com/500x400/?rescue,dogs" alt="About Ubuntu Animal Rescue">
+    </section>
+
+    <section class="team-section">
+      <div class="container">
+        <h2>Meet Our Team</h2>
+        <div class="team-grid">
+          <div class="team-member">
+            <img src="https://source.unsplash.com/200x200/?person,vet" alt="Dr. Sarah Johnson - Head Veterinarian">
+            <h4>Dr. Sarah Johnson</h4>
+            <p>Head Veterinarian</p>
+          </div>
+          <div class="team-member">
+            <img src="https://source.unsplash.com/200x200/?person,manager" alt="Michael Brown - Shelter Manager">
+            <h4>Michael Brown</h4>
+            <p>Shelter Manager</p>
+          </div>
+          <div class="team-member">
+            <img src="https://source.unsplash.com/200x200/?person,volunteer" alt="Lisa Chen - Volunteer Coordinator">
+            <h4>Lisa Chen</h4>
+            <p>Volunteer Coordinator</p>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <p>Email: info@ubuntuanimalrescue.org</p>
+        <p>Phone: +27 11 123 4567</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="adoption.html">Adoption Process</a></li>
+          <li><a href="events.html">Upcoming Events</a></li>
+          <li><a href="donations.html">Make a Donation</a></li>
+          <li><a href="contact.html">Contact Form</a></li>
+        </ul>
+      </div>
+    </div>
     <p>&copy; 2025 Ubuntu Animal Rescue | Made with ❤️ by Nixo</p>
   </footer>
+
   <script src="js/script.js"></script>
 </body>
 </html>
